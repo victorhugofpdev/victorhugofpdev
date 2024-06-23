@@ -1,0 +1,23 @@
+ARG jlist 10:1,10:100
+ARG jobs 3
+ARG maxlen 10
+ARG maxticket 100
+ARG quantum 100
+ARG seed 0
+
+Here is the job list, with the run time of each job: 
+  Job 0 ( length = 10, tickets = 1 )
+  Job 1 ( length = 10, tickets = 100 )
+
+
+** Solutions **
+
+Random 844422 -> Winning ticket 62 (of 101) -> Run 1
+  Jobs:
+ (  job:0 timeleft:10 tix:1 )  (* job:1 timeleft:10 tix:100 ) 
+--> JOB 1 DONE at time 100
+Random 757955 -> Winning ticket 0 (of 1) -> Run 0
+  Jobs:
+ (* job:0 timeleft:10 tix:1 )  (  job:1 timeleft:0 tix:--- ) 
+--> JOB 0 DONE at time 200
+
